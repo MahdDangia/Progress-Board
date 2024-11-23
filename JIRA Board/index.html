@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JIRA Board</title>
+</head>
+<body>
+    <header><h1>JIRA Board</h1></header>
+    <main>
+        <section id="row">
+            <input type="text" id="addTask" placeholder="Add Task">
+            <button id="submit">
+                <lord-icon
+    src="https://cdn.lordicon.com/zrkkrrpl.json"
+    trigger="click"
+    stroke="bold"
+    state="hover-swirl"
+    colors="primary:#ffffff,secondary:#08a88a"
+    onclick="addTask()">
+</lord-icon>
+        </button>
+        </section>
+        <div>
+        <section id="allLists">
+            <ul id="TO-DO">
+                <h3>TO-DO</h3>
+                <!-- <li>task 1</li>
+                <li>task 1</li>
+                <li>task 1</li> -->
+            </ul>
+
+            <ul id="IN-Progress">
+                <h3>IN-Progress</h3>
+                <!-- <li>task 1</li>
+                <li>task 1</li>
+                <li>task 1</li> -->
+            </ul>
+
+
+
+            <ul id="Done">
+                <h3>Done</h3>
+                <!-- <li>task 1</li>
+                <li>task 1</li>
+                <li>task 1</li> -->
+            </ul>
+        </section>
+    </div>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js" integrity="sha512-TelkP3PCMJv+viMWynjKcvLsQzx6dJHvIGhfqzFtZKgAjKM1YPqcwzzDEoTc/BHjf43PcPzTQOjuTr4YdE8lNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="https://kit.fontawesome.com/0e394372d5.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
